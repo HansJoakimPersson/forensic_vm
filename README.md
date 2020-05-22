@@ -10,7 +10,9 @@ This repository works helps me configure and maintain my forensic_vm. It simplif
 To install and setup:
 
 ```
-START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/HansJoakimPersson/forensic_vm/master/bootstrap.ps1
+. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force
+
+Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/HansJoakimPersson/forensic_vm/master/bootstrap.ps1 -DisableReboots
 ```
 
 
